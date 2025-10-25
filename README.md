@@ -2,4 +2,4 @@
 This repository contains stealer functions for research and learning purposes only.
 
 ## Legal Notice
-The **creator is not responsible** for any misuse of this repository; **all responsibilities** and **damages** caused by creating and distributing malware are entirely the **user's responsibility.**
+- The **creator is not responsible** for any misuse of this repository; **all responsibilities** and **damages** caused by creating and distributing malware are entirely the **user's responsibility.**
