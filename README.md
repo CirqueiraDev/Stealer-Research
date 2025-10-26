@@ -26,3 +26,8 @@
 
 ### Anti_VM_Debug.py
 - Runs anti-analysis checks: detects active debuggers, reverse-engineering processes, usernames/hosts/HWIDs associated with virtual machines or analysis environments, and returns `true` if signs of VM/debugging are found.
+
+# Bypass AV and Ofuscation
+
+### marshal.py
+- Compiles the code, serializes it with the marshal module, encodes it in base64 (and optionally compresses it with zlib), and generates a new script that, when executed, decodes and runs the original code in memory
