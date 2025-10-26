@@ -12,17 +12,17 @@
 
 # Stealer Functions
 
-### `roblox_cookies.py`
-Searches for Roblox session cookies (`.ROBLOSECURITY`) across multiple browsers, tries them against the Roblox API to retrieve account data, and writes found accounts into a file inside a ZIP.
+### roblox_cookies.py
+- Searches for Roblox session cookies (`.ROBLOSECURITY`) across multiple browsers, tries them against the Roblox API to retrieve account data, and writes found accounts into a file inside a ZIP.
 
-### `browser_steal.py`
-Scans browser profiles to extract extensions, saved passwords, cookies, history, downloads and card data; decrypts when needed and writes those items to files inside a ZIP.
+### browser_steal.py
+- Scans browser profiles to extract extensions, saved passwords, cookies, history, downloads and card data; decrypts when needed and writes those items to files inside a ZIP.
 
-### `discord_token.py`
-Searches for Discord tokens in local browser/client files and databases, validates those tokens with the Discord API, collects account details (username, id, billing, Nitro, etc.), and records them to a file.
+### discord_token.py
+- Searches for Discord tokens in local browser/client files and databases, validates those tokens with the Discord API, collects account details (username, id, billing, Nitro, etc.), and records them to a file.
 
-### `interesting_files.py`
-Searches user folders (Desktop, Downloads, Documents, Recent, etc.) for files with keyword names related to accounts, wallets, keys, backups, and copies those files into an **“Interesting Files”** folder inside the ZIP.
+### interesting_files.py
+- Searches user folders (Desktop, Downloads, Documents, Recent, etc.) for files with keyword names related to accounts, wallets, keys, backups, and copies those files into an **“Interesting Files”** folder inside the ZIP.
 
-### `Anti_VM_Debug.py`
-Runs anti-analysis checks: detects active debuggers, reverse-engineering processes, usernames/hosts/HWIDs associated with virtual machines or analysis environments, and returns `true` if signs of VM/debugging are found.
+### Anti_VM_Debug.py
+- Runs anti-analysis checks: detects active debuggers, reverse-engineering processes, usernames/hosts/HWIDs associated with virtual machines or analysis environments, and returns `true` if signs of VM/debugging are found.
