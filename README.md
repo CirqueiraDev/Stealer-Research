@@ -34,6 +34,9 @@
 ### marshal.py
 - Compiles the code, serializes it with the marshal module, encodes it in base64 (and optionally compresses it with zlib), and generates a new script that, when executed, decodes and runs the original code in memory
 
+<br>
+
+# Result
 
 ### pyinstaller + marshal compress = true 
 <img width="55%" alt="image" src="https://github.com/user-attachments/assets/929ef298-e936-4da9-8d4a-dc915e02dbd8" />
