@@ -10,7 +10,7 @@
 
 ---
 
-## Stealer Functions
+# Stealer Functions
 
 ### `roblox_cookies.py`
 Searches for Roblox session cookies (`.ROBLOSECURITY`) across multiple browsers, tries them against the Roblox API to retrieve account data, and writes found accounts into a file inside a ZIP.
