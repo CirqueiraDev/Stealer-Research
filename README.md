@@ -33,3 +33,17 @@
 
 ### marshal.py
 - Compiles the code, serializes it with the marshal module, encodes it in base64 (and optionally compresses it with zlib), and generates a new script that, when executed, decodes and runs the original code in memory
+
+
+### pyinstaller + marshal compress = true 
+<img width="55%" alt="image" src="https://github.com/user-attachments/assets/929ef298-e936-4da9-8d4a-dc915e02dbd8" />
+
+[**Virustotal Link**](https://www.virustotal.com/gui/file/23aa5acb9fa9cb2a53cdfa8fc6373b04166fb2f21f6b4489b1ef61ef42ab3452?nocache=1)
+
+---
+
+### only pyinstaller
+<img width="52%"  alt="image" src="https://github.com/user-attachments/assets/f05cb01c-86a2-45c9-b49a-53b9bb075ab2" />
+
+[**Virustotal Link**](https://www.virustotal.com/gui/file/695ffa3bf0cd68b871acc074a3a5eef9b7f14194c957f1e16c4e5caee03a0994?nocache=1)
+
