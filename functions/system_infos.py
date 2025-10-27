@@ -17,24 +17,25 @@ def GetSystemInfos(zip_file):
             return ip_info
         return 'No IP infos.'
 
-    IPinfos = info()
+    try: 
+        IPinfos = info()
 
-    cpu_count = psutil.cpu_count(logical=True)
-    ram_total = round(psutil.virtual_memory().total / (1024**3), 2)
-    disk_usage = psutil.disk_usage('/').percent
+        cpu_count = psutil.cpu_count(logical=True)
+        ram_total = round(psutil.virtual_memory().total / (1024**3), 2)
+        disk_usage = psutil.disk_usage('/').percent
 
-    net_info = ''
-    with suppress(Exception):
-        interfaces = psutil.net_if_addrs()
-        max_len = max(len(i) for i in interfaces)
+        net_info = ''
+        with suppress(Exception):
+            interfaces = psutil.net_if_addrs()
+            max_len = max(len(i) for i in interfaces)
 
-        for iface, addr_list in interfaces.items():
-            for addr in addr_list:
-                if addr.family == socket.AF_INET:
-                    pad = max_len - len(iface)
-                    net_info += f"    - {iface}{space * pad} : {addr.address}\n"
+            for iface, addr_list in interfaces.items():
+                for addr in addr_list:
+                    if addr.family == socket.AF_INET:
+                        pad = max_len - len(iface)
+                        net_info += f"    - {iface}{space * pad} : {addr.address}\n"
 
-    system_infos = f"""
+        system_infos = f"""
 System info:
     - hostname      : {socket.gethostname()}
     - username      : {getpass.getuser()}
@@ -53,10 +54,15 @@ Network interfaces:
 {net_info}
 Public IP info:
 {IPinfos}
-"""
-    
+    """
+        infos = True    
+    except:
+        system_infos = "No infos."
+        infos = False
+        
     zip_file.writestr(f"system_infos.txt", system_infos)
     return infos
+
 
 with zipfile.ZipFile("systeminfoss.zip", "w") as zf:
     GetSystemInfos(zf)
