@@ -50,3 +50,10 @@
 
 [**Virustotal Link**](https://www.virustotal.com/gui/file/695ffa3bf0cd68b871acc074a3a5eef9b7f14194c957f1e16c4e5caee03a0994?nocache=1)
 
+---
+
+### Credits:
+
+- Coded by CirqueiraDev
+- **Discord: Cirqueira**
+- <a href="https://www.instagram.com/cirqueirax/">Instagram</a>
